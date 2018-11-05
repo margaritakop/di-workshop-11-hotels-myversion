@@ -26,7 +26,7 @@ describe('Hotel', function() {
     })
 
     it ('should expect no stars when there are no reviews', ()=>{
-        var hotel = new Hotel("Hilton Metropole", "London")
+        var hotel = new Hotel("Hilton Metropole", "London UK")
         expect(hotel.ratingAsStars()).equal('')
 
         //TODO: Implement a second test when array is not empty
@@ -36,6 +36,12 @@ describe('Hotel', function() {
         var hotel = new Hotel("Hilton Metropole", "London")
         expect(hotel.urlSlug()).equal("hilton_metropole_london")
     })
+
+    it ('should return an _formatted string of the hotel with multiple spaces', ()=>{
+        var hotel = new Hotel("Hilton Metropole", "London UK")
+        expect(hotel.urlSlug()).equal("hilton_metropole_london_uk")
+    })
+
     
 
 

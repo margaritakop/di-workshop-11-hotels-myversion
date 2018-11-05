@@ -22,7 +22,9 @@ class Hotel {
     }
 
     urlSlug(){
-        return false
+        let slug = this.name + '_' + this.city
+        slug = slug.replace(/ /g, '_').toLowerCase()
+        return slug
     }
 }
 module.exports = Hotel
