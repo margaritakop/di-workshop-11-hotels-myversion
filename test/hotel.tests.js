@@ -51,4 +51,29 @@ describe('Hotel', function() {
         expect(hotel2.reviews).deep.equal([review1, review2])
         expect(hotel2.reviewCount()).equal(2)
     })
+
+    it('should return JSON of the hotel', ()=>{
+        json = {
+            "name":"Hilton on the Hill",
+            "city":"Scotland UK",
+            "reviewCount":2,
+            "rating":3,
+            "ratingAsStars":"⭐️⭐️⭐️",
+            "urlSlug":"hilton_metropole_london",
+            "reviews":[
+              {
+                "rating":5,
+                "text":"Excellent hotel, very clean",
+                "date":"2018-12-17T00:00:00.000Z",
+                "ratingAsStars":"⭐️⭐️⭐️⭐️⭐️",
+              },{
+                "rating":1,
+                "text":"Terrible hotel, smelled of mice",
+                "date":"2018-01-01T00:00:00.000Z",
+                "ratingAsStars":"⭐️",
+              }
+            ]
+          }
+        expect(hotel2.toJSON()).equal(json)
+    })
 });

@@ -41,5 +41,17 @@ class Hotel {
     addReview(review){
         this.reviews.push(review)
     }
+    toJSON(){
+        let hotel = {
+            name: this.name,
+            city: this.city,
+            reviewCount: this.reviewCount(),
+            rating:this.rating(),
+            ratingAsStars:this.ratingAsStars(),
+            urlSlug:this.urlSlug(),
+            reviews :this.reviews
+        }
+        return JSON.stringify(hotel)
+    }
 }
 module.exports = Hotel
