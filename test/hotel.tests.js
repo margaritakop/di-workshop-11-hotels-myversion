@@ -5,7 +5,7 @@ var Hotel = require('../models/hotel')
 
 describe('Hotel', function() {
 
-
+    //TODO refactor the creation of the hotel object over and over again
     it ('should instanciate properly', ()=>{
         var hotel = new Hotel("Hilton Metropole", "London")
         expect(hotel.name).equal("Hilton Metropole")
