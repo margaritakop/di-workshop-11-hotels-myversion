@@ -10,6 +10,7 @@ describe('Review', function() {
     it ('should instanciate', ()=>{
     expect(review1.rating).equal(5)
     expect(review1.text).equal("Excellent hotel, very clean")
+    expect(review1.date).deep.equal(new Date ('2018-12-17'))
     })
 
     //review1.date //=> A javascript Date object for 2018-12-17

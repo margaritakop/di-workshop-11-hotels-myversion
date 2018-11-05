@@ -1,7 +1,8 @@
 class Review {
-    constructor (rating, text){
+    constructor (rating, text, date){
         this.rating = rating
         this.text = text
+        this.date = new Date(date)
     }
 }
 module.exports = Review
