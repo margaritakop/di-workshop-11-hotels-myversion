@@ -8,5 +8,11 @@ class Hotel {
     reviewCount(){
         return this.reviews.length
     }
+
+    rating(){
+        if (this.reviewCount == 0){
+            return 0
+        }
+    }
 }
 module.exports = Hotel
