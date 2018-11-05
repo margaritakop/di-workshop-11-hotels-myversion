@@ -25,20 +25,21 @@ describe('Hotel', function() {
         expect(hotel.reviewCount()).equal(0)
     })
 
-    it ('should calculate rating', ()=>{
+    it ('should return 0 rating when no reviews', ()=>{
         var hotel = new Hotel("Hilton Metropole", "London")
         expect(hotel.rating()).equal(0)
 
         //TODO: Implement a second test when array is not empty
     })
 
-    it ('should make start for rating', ()=>{
+    it ('should expect no stars when there are no reviews', ()=>{
         var hotel = new Hotel("Hilton Metropole", "London")
         expect(hotel.ratingAsStars()).equal('')
+
+        //TODO: Implement a second test when array is not empty
     })
     
     //hotel.urlSlug() //=> "hilton_metropole_london"
-
 
 
     //methods once reviews were added
