@@ -26,5 +26,8 @@ class Hotel {
         slug = slug.replace(/ /g, '_').toLowerCase() //search for space regular expressions everywhere, g is 'global' modifier
         return slug
     }
+    addReview(review){
+        this.reviews.push(review)
+    }
 }
 module.exports = Hotel
