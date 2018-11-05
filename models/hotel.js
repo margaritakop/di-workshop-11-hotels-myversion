@@ -10,7 +10,7 @@ class Hotel {
     }
 
     rating(){
-        if (this.reviewCount == 0){
+        if (this.reviewCount() == 0){
             return 0
         }
     }
