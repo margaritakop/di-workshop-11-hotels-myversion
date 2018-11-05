@@ -16,7 +16,8 @@ class Review {
         let review = {
             rating : this.rating,
             text : this.text, 
-            date : new Date(this.date)
+            date : new Date(this.date),
+            ratingAsStars : this.ratingAsStars()
         }
         return JSON.stringify(review)
     }
