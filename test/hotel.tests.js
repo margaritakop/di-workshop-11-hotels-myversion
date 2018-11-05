@@ -42,14 +42,18 @@ describe('Hotel', function() {
     //make and add some reviews
     let review1 = new Review (5, "Excellent hotel, very clean", "2018-12-17")
     let review2 = new Review(1, "Terrible hotel, smelled of mice", "2018-01-01")
+    hotel.addReview(review1)
+    hotel.addReview(review2)
 
     it('should record reviews', ()=>{
-        hotel.addReview(review1)
-        hotel.addReview(review2)
         expect(hotel.reviews).deep.equal([review1, review2])
         expect(hotel.reviewCount()).equal(2)
     })
 
+    it('should take an average of all ratings', () => {
+        expect(hotel.rating()).equal(3)
+    })
+    
     //hotel.rating() //=> 3 (the average or all reviews)
     //hotel.ratingAsStars() //=> "⭐️⭐️⭐️"
 });
