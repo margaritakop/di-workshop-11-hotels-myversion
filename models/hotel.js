@@ -23,7 +23,7 @@ class Hotel {
 
     urlSlug(){
         let slug = this.name + '_' + this.city
-        slug = slug.replace(/ /g, '_').toLowerCase()
+        slug = slug.replace(/ /g, '_').toLowerCase() //search for space regular expressions everywhere, g is 'global' modifier
         return slug
     }
 }
