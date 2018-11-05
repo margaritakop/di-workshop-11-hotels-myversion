@@ -27,7 +27,7 @@ class Hotel {
         } else {
             var stars = ''
             for(var i=0; i < this.rating(); i++){
-                stars = stars + '⭐' ;
+                stars = stars + "⭐️" ;
             }
             return stars
         }
