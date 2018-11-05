@@ -12,6 +12,16 @@ describe('Hotel', function() {
     //hotel.reviewCount() //=> 0
     //hotel.rating() //=> 0
     //hotel.ratingAsStars() //=> ''
+
+    it ('should instanciate properly', ()=>{
+        var hotel = new Hotel("Hilton Metropole", "London")
+        expect(hotel.name).equal("Hilton Metropole")
+        expect(hotel.city).equal("London")
+        expect(hotel.reviews).deep.equal([])
+        expect(hotel.reviewCount()).equal(0)
+        expect(hotel.rating()).equal(0)
+        expect(hotel.ratingAsStars()).equal('')
+    })
     
     //hotel.urlSlug() //=> "hilton_metropole_london"
 
