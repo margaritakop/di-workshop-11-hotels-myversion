@@ -22,4 +22,14 @@ describe('Review', function() {
     expect(review2.ratingAsStars()).equal('⭐')
     })
 
+    it ('should be able to return a JSON', ()=>{
+        expect(review1.toJSON().equal(
+            {
+                "rating":5,
+                "text":"Excellent hotel, very clean",
+                "date":"2018-12-17T00:00:00.000Z",
+                "ratingAsStars":"⭐️⭐️⭐️⭐️⭐️",
+            }
+        ))
+    })
 });
