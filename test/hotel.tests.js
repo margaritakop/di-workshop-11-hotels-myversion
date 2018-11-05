@@ -5,13 +5,6 @@ var Hotel = require('../models/hotel')
 
 describe('Hotel', function() {
 
-    //var hotel = new Hotel("Hilton Metropole", "London")
-    //hotel.name //=> "Hilton Metropole"
-    //hotel.city //=> "London"
-    //hotel.reviews //=> []
-    //hotel.reviewCount() //=> 0
-    //hotel.rating() //=> 0
-    //hotel.ratingAsStars() //=> ''
 
     it ('should instanciate properly', ()=>{
         var hotel = new Hotel("Hilton Metropole", "London")
@@ -38,8 +31,12 @@ describe('Hotel', function() {
 
         //TODO: Implement a second test when array is not empty
     })
+
+    it ('should return an _formatted string of the hotel', ()=>{
+        var hotel = new Hotel("Hilton Metropole", "London")
+        expect(hotel.urlSlug()).equal("hilton_metropole_london")
+    })
     
-    //hotel.urlSlug() //=> "hilton_metropole_london"
 
 
     //methods once reviews were added

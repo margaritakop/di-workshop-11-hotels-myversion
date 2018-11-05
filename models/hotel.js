@@ -20,5 +20,9 @@ class Hotel {
             return ''
         }
     }
+
+    urlSlug(){
+        return false
+    }
 }
 module.exports = Hotel
