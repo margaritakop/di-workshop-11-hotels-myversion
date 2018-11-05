@@ -12,6 +12,12 @@ class Hotel {
     rating(){
         if (this.reviewCount() == 0){
             return 0
+        } else {
+            let r = 0
+            for(var i=0; i < this.reviewCount(); i++){
+                r = r + this.reviews[i].rating
+            }
+            return r/i
         }
     }
 
