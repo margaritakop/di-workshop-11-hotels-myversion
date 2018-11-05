@@ -26,8 +26,7 @@ describe('Hotel', function() {
 
     it ('should expect no stars when there are no reviews', ()=>{
         expect(hotel.ratingAsStars()).equal('')
-
-        //TODO: Implement a second test when array is not empty
+        expect(hotel2.ratingAsStars()).equal("⭐️⭐️⭐️")
     })
 
     it ('should return an _formatted string of the hotel', ()=>{

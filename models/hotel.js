@@ -24,6 +24,12 @@ class Hotel {
     ratingAsStars(){
         if (this.reviewCount() == 0){
             return ''
+        } else {
+            var stars = ''
+            for(var i=0; i < this.rating(); i++){
+                stars = stars + '⭐' ;
+            }
+            return stars
         }
     }
 
