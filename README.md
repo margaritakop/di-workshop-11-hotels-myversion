@@ -2,6 +2,8 @@
 # Workshop: Hotel System 🏘
 
 
+test change
+
 This exercise is designed to test your TDD and OOP skills, and also to introduce you to some new concepts and techniques. It should also help to consolidate your command line and git skills, too. If you've completed the **Person and AddressBook Workshop**, you'll see some similarities. We'll give you a little less guidance in this workshop than we have on previous ones.
 
 ⚠️ **We'll be working to improve this system over the next couple of weeks as we learn more about testing.**
