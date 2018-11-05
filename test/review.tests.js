@@ -13,7 +13,6 @@ describe('Review', function() {
     expect(review1.date).deep.equal(new Date ('2018-12-17'))
     })
 
-    //review1.date //=> A javascript Date object for 2018-12-17
     //review1.ratingAsStars() //=> "⭐️⭐️⭐️⭐️⭐"
 
     //var review2 = new Review(1, "Terrible hotel, smelled of mice", "2018-01-01")
