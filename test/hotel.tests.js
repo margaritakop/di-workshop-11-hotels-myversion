@@ -16,4 +16,13 @@ describe('Hotel', function() {
     //hotel.urlSlug() //=> "hilton_metropole_london"
 
 
+
+    //methods:
+    //hotel.addReview(review1)
+    //hotel.addReview(review2)
+
+    //hotel.reviews //=> [<Review>, <Review>] (an array of two javascript objects representing your reviews)
+    //hotel.reviewCount() //=> 2
+    //hotel.rating() //=> 3 (the average or all reviews)
+    //hotel.ratingAsStars() //=> "⭐️⭐️⭐️"
 });
