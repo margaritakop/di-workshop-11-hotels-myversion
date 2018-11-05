@@ -14,15 +14,12 @@ describe('Review', function() {
     expect(review1.ratingAsStars()).equal('⭐⭐⭐⭐⭐')
     })
 
-
-
     let review2 = new Review(1, "Terrible hotel, smelled of mice", "2018-01-01")
     it ('should instanciate with second example', ()=>{
     expect(review2.rating).equal(1)
     expect(review2.text).equal("Terrible hotel, smelled of mice")
     expect(review2.date).deep.equal(new Date ('2018-01-01'))
-    })//**** */
-
-    //review2.ratingAsStars() //=> "⭐️"
+    expect(review2.ratingAsStars()).equal('⭐')
+    })
 
 });
