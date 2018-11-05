@@ -7,9 +7,10 @@ class Review {
 
     ratingAsStars(){
         var stars = ''
-        for(var i=0; i < this.rating.floor; i++){
-            stars = stars + '⭐️' ;
+        for(var i=0; i < this.rating; i++){
+            stars = stars + '⭐' ;
         }
+        return stars
     }
 }
 module.exports = Review
