@@ -4,5 +4,9 @@ class Hotel {
         this.city = city
         this.reviews = []
     }
+
+    reviewCount(){
+        return this.reviews.length
+    }
 }
 module.exports = Hotel
