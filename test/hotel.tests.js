@@ -46,14 +46,10 @@ describe('Hotel', function() {
     it('should record reviews', ()=>{
         hotel.addReview(review1)
         hotel.addReview(review2)
-        expect(hotel.reviews.length).equal(2)
         expect(hotel.reviews).deep.equal([review1, review2])
+        expect(hotel.reviewCount()).equal(2)
     })
 
-
-
-    //hotel.reviews //=> [<Review>, <Review>] (an array of two javascript objects representing your reviews)
-    //hotel.reviewCount() //=> 2
     //hotel.rating() //=> 3 (the average or all reviews)
     //hotel.ratingAsStars() //=> "⭐️⭐️⭐️"
 });
