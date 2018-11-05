@@ -28,6 +28,8 @@ describe('Hotel', function() {
     it ('should calculate rating', ()=>{
         var hotel = new Hotel("Hilton Metropole", "London")
         expect(hotel.rating()).equal(0)
+
+        //TODO: Implement a second test when array is not empty
     })
 
     it ('should make start for rating', ()=>{
@@ -39,7 +41,7 @@ describe('Hotel', function() {
 
 
 
-    //methods:
+    //methods once reviews were added
     //hotel.addReview(review1)
     //hotel.addReview(review2)
 

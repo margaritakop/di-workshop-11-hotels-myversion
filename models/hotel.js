@@ -14,5 +14,11 @@ class Hotel {
             return 0
         }
     }
+
+    ratingAsStars(){
+        if (this.reviewCount() == 0){
+            return ''
+        }
+    }
 }
 module.exports = Hotel
