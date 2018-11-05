@@ -47,7 +47,7 @@ describe('Hotel', function() {
         hotel.addReview(review1)
         hotel.addReview(review2)
         expect(hotel.reviews.length).equal(2)
-        //expect(hotel.reviews).deep.equal([<Review>,<Review>])
+        expect(hotel.reviews).deep.equal([review1, review2])
     })
 
 
